@@ -10,7 +10,8 @@ const VideoBkgd = () => {
                 loop 
                 muted 
                 playsInline
-                preload="none">
+                preload="none"
+            >
                 <source src="/videos/lightning.mp4" type="video/mp4" />
             </video>
         </div>
