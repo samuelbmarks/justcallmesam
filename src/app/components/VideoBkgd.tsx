@@ -21,7 +21,7 @@ const VideoBkgd = () => {
             </div>
 
             {/* <div className="absolute top-0 left-0 object-cover h-full w-full bg-gradient-to-b from-black-10 to-black-40 z-10"></div> */}
-            {/* <video 
+            <video 
                 className="absolute top-0 left-0 object-cover h-full w-full"
                 autoPlay
                 loop 
@@ -29,8 +29,8 @@ const VideoBkgd = () => {
                 playsInline
                 preload="none"
             >
-                <source src="/videos/lightning.mp4" type="video/mp4" />
-            </video> */}
+                <source src="/lightning.mp4" type="video/mp4" />
+            </video>
         </div>
       );
   };
