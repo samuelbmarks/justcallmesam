@@ -9,7 +9,7 @@ const VideoBkgd = () => {
                     top-0 
                     left-0
                     w-full
-                    h-screen
+                    h-dvh
                     bg-gradient-to-b
                     from-gradient2
                     via-gradient3

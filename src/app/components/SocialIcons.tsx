@@ -34,13 +34,13 @@ const SocialIcons = () => {
         />
         <SocialIcon
             className="drop-shadow-off-white-50"
-            ref={glitch.ref}
+            // ref={glitch.ref}
             url="https://www.github.com/samuelbmarks/"
             {...iconProps}
         />
         <SocialIcon
             className="drop-shadow-off-white-50"
-            ref={glitch.ref}
+            // ref={glitch.ref}
             url="https://www.instagram.com/thesammarks/"
             {...iconProps}
         />

@@ -6,7 +6,7 @@ import HomeButtons from "./components/HomeButtons";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center min-h-screen items-center">
+    <main className="flex flex-col justify-center items-center h-dvh">
       <VideoBkgd />
       <SocialIcons />
       <Name />
