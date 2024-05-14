@@ -29,7 +29,8 @@ const VideoBkgd = () => {
                 playsInline
                 preload="none"
             >
-                <source src="/lightning.mp4" type="video/mp4" />
+                <source src="videos/lightning.mp4" type="video/mp4" />
+                <source src="videos/lightning.webm" type="video/webm" />
             </video>
         </div>
       );
