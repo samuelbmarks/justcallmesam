@@ -18,7 +18,7 @@ const Name = () => {
     });
     
     return (
-        <div className="max-sm:hidden">
+        <div className="max-lg:hidden">
             <Link 
                 href="/"
                 ref={glitch.ref} 

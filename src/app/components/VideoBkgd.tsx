@@ -3,7 +3,7 @@ import React from 'react'
 const VideoBkgd = () => {
     return (
         <div>
-            <div
+            {/* <div
                 className="
                     absolute
                     top-0 
@@ -18,11 +18,11 @@ const VideoBkgd = () => {
                     via-gradient6
                     to-gradient7
                 ">
-            </div>
+            </div> */}
 
-            {/* <div className="absolute top-0 left-0 object-cover h-full w-full bg-gradient-to-b from-black-10 to-black-40 z-10"></div> */}
+            <div className="absolute top-0 left-0 object-cover h-full w-full bg-gradient-to-b from-black-10 to-black-40 z-10"></div>
             <video 
-                className="absolute top-0 left-0 object-cover h-full w-full"
+                className="absolute top-0 left-0 object-cover h-full w-[120vw]"
                 autoPlay
                 loop 
                 muted 

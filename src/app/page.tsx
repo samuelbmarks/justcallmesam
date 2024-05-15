@@ -7,7 +7,7 @@ import SocialIconsSm from "./components/SocialIconsSm";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center h-dvh">
+    <main className="flex flex-col justify-center items-center h-dvh overflow-visible">
       <VideoBkgd />
       <Name />
       <HomeContent />
