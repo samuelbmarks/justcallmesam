@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const HomeButtons = () => {    
@@ -9,19 +10,29 @@ const HomeButtons = () => {
                 rel="noopener noreferrer"
                 download
             >
-                <button className="border-solid border-2 pl-8 pr-8 pt-2 pb-2 rounded-xl border-off-white-50 max-sm:w-[250px] transition duration-300 hover:bg-off-white-50">
-                    DOWNLOAD RESUME
+                <button className="
+                    bg-slate-500 hover:bg-slate-700 dark:bg-slate-300 dark:hover:bg-slate-100
+                    text-slate-100 dark:text-slate-700
+                    px-8 py-3 tracking-[0.1em]
+                    rounded-xl border-off-white-50 max-sm:w-[250px] 
+                    transition-all duration-300
+                    focus:ring-2 focus:ring-white
+                    text-sm font-medium sm:w-auto px-5 py-2.5 text-center
+                ">Download Resume
                 </button>
             </a>
-            <a 
-                href="mailto:sam@justcallmesam.com"
-                target="_blank" 
-                rel="noopener noreferrer"
-            >
-                <button className="border-solid border-2 pl-8 pr-8 pt-2 pb-2 rounded-xl border-off-white-50 max-sm:w-[250px] transition duration-300 hover:bg-off-white-50">
-                    EMAIL ME
+            <Link href="/contact">
+                <button className="
+                    bg-slate-500 hover:bg-slate-700 dark:bg-slate-300 dark:hover:bg-slate-100
+                    text-slate-100 dark:text-slate-700
+                    px-8 py-3 tracking-[0.1em]
+                    rounded-xl border-off-white-50 max-sm:w-[250px] 
+                    transition-all duration-300
+                    focus:ring-2 focus:ring-white
+                    text-sm font-medium sm:w-auto px-5 py-2.5 text-center
+                ">Contact Me
                 </button>
-            </a>
+            </Link>
         </div>
     );
 };

@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        slide: 'slide 10s linear infinite',
+      },
       colors: {
         'black-10': 'rgba(0, 0, 0, 0.1)',
         'black-40': 'rgba(0, 0, 0, 0.4)',
@@ -23,10 +32,12 @@ const config: Config = {
         'gradient8': '#484848',
         'gradient9': '#525252',
         'gradient10': '#5C5C5C',
-        'gradient11': '#666',        
+        'gradient11': '#666',
+        'green': '#80ed99',
       },
     },
   },
   plugins: [],
+  darkMode: 'class',
 };
 export default config;

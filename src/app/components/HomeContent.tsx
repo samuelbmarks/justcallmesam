@@ -9,13 +9,13 @@ const HomeContent = () => {
                 className="flex flex-col items-center gap-3"
                 href="/"
             >
-                <div className="tracking-[0.5em] text-bold text-lg flex items-center gap-4 max-sm:flex-col">
+                <div className="tracking-[0.5em] font-bold text-lg flex items-center gap-4 max-sm:flex-col">
                     <div>JUST</div>
                     <div>CALL</div>
                     <div>ME</div>
                     <div>SAM</div>
                 </div>
-                <div className="tracking-[0.5em] flex text-sm items-center gap-4 max-sm:flex-col max-sm:hidden">
+                <div className="tracking-[0.5em] flex font-bold text-sm items-center gap-4 max-sm:flex-col max-sm:hidden">
                     <div>HUMAN BEING</div>
                     <div>|</div>
                     <div>SOFTWARE ENGINEER</div>

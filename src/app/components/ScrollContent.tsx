@@ -24,12 +24,12 @@ const ScrollContent = () => {
         </div>
 
         <footer className="text-xs">
-            © Made by <a 
+            © Made by <a
               className="text-bold" 
               href="https://github.com/samuelbmarks/" 
               target="_blank" 
-              rel="noopener noreferrer">
-                Sam
+              rel="noopener noreferrer"
+            >Sam
             </a>
         </footer>
       </div>

@@ -5,7 +5,12 @@
 :root {}
 
 body {
-  color: rgba(229,227,211,1);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
 }
 
 @layer utilities {
