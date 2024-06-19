@@ -54,19 +54,36 @@ const ContactForm = () => {
     };
 
     return (
-      <form className="absolute mb-[100px] top-[150px] z-20 flex flex-col gap-7 w-[450px] max-w-[80%]" action={formAction}>
+      <form className="z-20 flex flex-col gap-7 w-[400px] max-w-[80%]" action={formAction}>
         <div className="relative z-0 w-full group">
           <input 
             type="text"
             name="first_name"
             id="first_name"
-            className="block py-2.5 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
+            className="
+              block py-2.5 w-full text-sm
+              text-slate-500 focus:text-slate-700 
+              border-slate-400 focus:border-slate-700 
+              dark:text-slate-400 dark:focus:text-slate-100
+              dark:border-slate-400 dark:focus:border-slate-100
+              border-0 border-b-2 bg-transparent
+              focus:outline-none focus:ring-0 peer
+            "
             placeholder=" "
             required 
           />
           <label 
             htmlFor="first_name"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-indigo-600 peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="
+              absolute scale-75 top-3 -z-10
+              text-sm peer-focus:font-medium 
+              text-slate-500 peer-focus:text-slate-700
+              dark:text-slate-400 dark:peer-focus:text-slate-100
+              origin-[0] peer-focus:start-0 
+              rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
+              peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
+              transition-all duration-300 transform -translate-y-6
+            "
           >First Name *
           </label>
         </div>
@@ -76,13 +93,30 @@ const ContactForm = () => {
             type="text"
             name="last_name"
             id="last_name"
-            className="block py-2.5 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
+            className="
+              block py-2.5 w-full text-sm
+              text-slate-500 focus:text-slate-700 
+              border-slate-400 focus:border-slate-700 
+              dark:text-slate-400 dark:focus:text-slate-100
+              dark:border-slate-400 dark:focus:border-slate-100
+              border-0 border-b-2 bg-transparent
+              focus:outline-none focus:ring-0 peer
+            "
             placeholder=" "
             required 
           />
           <label 
             htmlFor="last_name"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-indigo-600 peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="
+              absolute scale-75 top-3 -z-10
+              text-sm peer-focus:font-medium 
+              text-slate-500 peer-focus:text-slate-700
+              dark:text-slate-400 dark:peer-focus:text-slate-100
+              origin-[0] peer-focus:start-0 
+              rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
+              peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
+              transition-all duration-300 transform -translate-y-6
+            "
           >Last Name *
           </label>
         </div>
@@ -92,13 +126,30 @@ const ContactForm = () => {
             type="email"
             id="email"
             name="email"
-            className="block py-2.5 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
+            className="
+              block py-2.5 w-full text-sm
+              text-slate-500 focus:text-slate-700 
+              border-slate-400 focus:border-slate-700 
+              dark:text-slate-400 dark:focus:text-slate-100
+              dark:border-slate-400 dark:focus:border-slate-100
+              border-0 border-b-2 bg-transparent
+              focus:outline-none focus:ring-0 peer
+            "
             placeholder=" "
             required 
           />
           <label 
             htmlFor="email"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-indigo-600 peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="
+              absolute scale-75 top-3 -z-10
+              text-sm peer-focus:font-medium 
+              text-slate-500 peer-focus:text-slate-700
+              dark:text-slate-400 dark:peer-focus:text-slate-100
+              origin-[0] peer-focus:start-0 
+              rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
+              peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
+              transition-all duration-300 transform -translate-y-6
+            "
           >Email Address *
           </label>
         </div>
@@ -108,21 +159,38 @@ const ContactForm = () => {
             type="tel"
             name="phone"
             id="phone"
-            className="block py-2.5 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
+            className="
+              block py-2.5 w-full text-sm
+              text-slate-500 focus:text-slate-700 
+              border-slate-400 focus:border-slate-700 
+              dark:text-slate-400 dark:focus:text-slate-100
+              dark:border-slate-400 dark:focus:border-slate-100
+              border-0 border-b-2 bg-transparent
+              focus:outline-none focus:ring-0 peer
+            "
             placeholder=" "
             value={phone}
             onChange={handlePhoneChange}
           />
           <label 
             htmlFor="phone"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-indigo-600 peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="
+              absolute scale-75 top-3 -z-10
+              text-sm peer-focus:font-medium 
+              text-slate-500 peer-focus:text-slate-700
+              dark:text-slate-400 dark:peer-focus:text-slate-100
+              origin-[0] peer-focus:start-0 
+              rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
+              peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
+              transition-all duration-300 transform -translate-y-6
+            "
           >Phone Number
           </label>
         </div>
 
-        <div className="flex gap-20">
+        <div className="flex gap-10 max-xs:flex-col">
           <fieldset>
-            <legend className="text-sm mb-4">Preferred Contact</legend>
+            <legend className="text-sm text-medium text-slate-600 dark:text-slate-200 mb-4">Preferred Contact *</legend>
 
             <div className="flex items-center mb-4 group">
               <input 
@@ -130,13 +198,21 @@ const ContactForm = () => {
                 id="prefers_email"
                 name="preferred_contact"
                 value="prefers_email"
-                className="w-4 h-4 border-gray-300 dark:focus:bg-indigo-600 dark:bg-gray-700 dark:border-gray-600"
+                className="
+                  form-radio w-4 h-4 
+                  checked:bg-blue-500 dark:checked:bg-blue-400
+                  transition-all duration-300 ease-in-out
+                "
                 checked={preferredContact === "prefers_email"}
                 onChange={handlePreferredContactChange}
               />
               <label 
                 htmlFor="prefers_email"
-                className="block ms-2 text-sm font-medium text-gray-300"
+                className="
+                  ms-2 text-sm 
+                  text-slate-600 dark:text-slate-200 
+                  transition-all duration-300 ease-in-out
+                "
               >Email
               </label>
             </div>
@@ -147,14 +223,23 @@ const ContactForm = () => {
                 id="prefers_text"
                 name="preferred_contact"
                 value="prefers_text"
-                className="w-4 h-4 border-gray-300 dark:focus:bg-indigo-600 dark:bg-gray-700 dark:border-gray-600"
+                className="
+                  form-radio w-4 h-4 peer
+                  checked:bg-blue-500 dark:checked:bg-blue-400
+                  disabled:opacity-50
+                  transition-all duration-300 ease-in-out
+                "
                 checked={preferredContact === "prefers_text"}
                 onChange={handlePreferredContactChange}
                 disabled={confirmationTextDisabled}
               />
               <label 
                 htmlFor="prefers_text"
-                className="block ms-2 text-sm font-medium text-gray-300"
+                className="
+                  peer-disabled:opacity-50 
+                  ms-2 text-sm 
+                  text-slate-600 dark:text-slate-200 
+                  transition-all duration-300 ease-in-out"
               >Phone (Text)
               </label>
             </div>
@@ -165,34 +250,52 @@ const ContactForm = () => {
                 id="prefers_call"
                 name="preferred_contact"
                 value="prefers_call"
-                className="w-4 h-4 border-gray-300 dark:focus:bg-indigo-600 dark:bg-gray-700 dark:border-gray-600"
+                className="
+                  w-4 h-4 peer
+                  checked:bg-blue-500 dark:checked:bg-blue-400
+                  disabled:opacity-50 
+                  transition-all duration-300 ease-in-out
+                "
                 checked={preferredContact === "prefers_call"}
                 onChange={handlePreferredContactChange}
                 disabled={confirmationTextDisabled}
               />
               <label 
                 htmlFor="prefers_call"
-                className="block ms-2 text-sm font-medium text-gray-300"
+                className="
+                  peer-disabled:opacity-50 
+                  ms-2 text-sm 
+                  text-slate-600 dark:text-slate-200 
+                  transition-all duration-300 ease-in-out
+              "
               >Phone (Call)
               </label>
             </div>
           </fieldset>
 
           <fieldset>
-            <legend className="text-sm mb-4">Receive Confirmation?</legend>
+            <legend className="mb-4 text-sm text-slate-600 dark:text-slate-200 transition-all duration-300 ease-in-out">Receive Confirmation?</legend>
 
             <div className="flex items-center mb-4 group">
               <input 
                 id="confirmation_email"
                 type="checkbox"
                 value="confirmation_email"
-                className="w-4 h-4 text-indigo-600 bg-gray-100 border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600"
+                className="
+                  form-checkbox w-4 h-4 rounded-sm peer 
+                  checked:bg-blue-500 dark:checked:bg-blue-400
+                  transition-all duration-300 ease-in-out
+                "
                 checked={confirmationEmail}
                 onChange={handleConfirmationEmailChange}
               />
               <label 
                 htmlFor="confirmation_email"
-                className="ms-2 text-sm font-medium text-gray-300"
+                className="
+                  ms-2 text-sm 
+                  text-slate-600 dark:text-slate-200 
+                  transition-all duration-300 ease-in-out
+                "
               >Confirmation Email
               </label>
             </div>
@@ -202,14 +305,24 @@ const ContactForm = () => {
                   id="confirmation_text"
                   type="checkbox"
                   value="confirmation_text"
-                  className="w-4 h-4 text-indigo-600 bg-gray-100 border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600"
+                  className="
+                    form-checkbox w-4 h-4 rounded-sm peer 
+                    disabled:opacity-50 
+                    checked:bg-blue-500 dark:checked:bg-blue-400
+                    transition-all duration-300 ease-in-out
+                    "
                   checked={confirmationText}
                   onChange={handleConfirmationTextChange}
                   disabled={confirmationTextDisabled}
                 />
                 <label 
                   htmlFor="confirmation_text"
-                  className="ms-2 text-sm font-medium text-gray-300"
+                  className="
+                    ms-2 text-sm 
+                    peer-disabled:opacity-50
+                    text-slate-600 dark:text-slate-200 
+                    transition-all duration-300 ease-in-out
+                  "
                 >Confirmation Text
                 </label>
             </div>
@@ -221,24 +334,52 @@ const ContactForm = () => {
           <textarea 
             name="message"
             id="message"
-            className="block py-5 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
+            className="
+              block py-2.5 w-full text-sm
+              text-slate-500 focus:text-slate-700 
+              border-slate-400 focus:border-slate-700 
+              dark:text-slate-400 dark:focus:text-slate-100
+              dark:border-slate-400 dark:focus:border-slate-100
+              border-0 border-b-2 bg-transparent
+              focus:outline-none focus:ring-0 peer
+            "
             placeholder=" "
           />
           <label 
             htmlFor="message"
-            className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-indigo-600 peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="
+              absolute scale-75 top-3 -z-10
+              text-sm peer-focus:font-medium 
+              text-slate-500 peer-focus:text-slate-700
+              dark:text-slate-400 dark:peer-focus:text-slate-100
+              origin-[0] peer-focus:start-0 
+              rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
+              peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
+              transition-all duration-300 transform -translate-y-6
+            "
           >Message
           </label>
         </div>
         
         <button 
           type="submit"
-          className="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-[green] font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700"
+          className="
+            font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center
+            text-slate-100 dark:text-slate-700
+            bg-slate-700 hover:bg-slate-800 dark:bg-slate-300 dark:hover:bg-slate-100
+            transition-all duration-300 ease-in-out
+            focus:ring-3 focus:outline-none focus:ring-[green]
+          "
         >Submit
         </button>
 
-        <p aria-live="polite" className="sr-only" role="status">
-          {state?.message}
+        <p aria-live="polite" className={`
+          text-center transition-all duration-300 ease-in-out
+          flex flex-col gap-2
+          ${state?.success ? 'text-blue-600 dark:text-blue-300' : 'text-red-500 dark:text-red-300'}
+        `}>
+          <span className="text-slate-100">{state?.message.body}</span>
+          <span className="text-sm">{state?.message.uuid}</span>
         </p>
 
       </form>

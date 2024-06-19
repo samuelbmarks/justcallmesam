@@ -1,13 +1,14 @@
 "use server"
 
 import { z } from 'zod'
+import { v4 as uuidv4 } from 'uuid';
 
 // Define the schema
 const schema = z.object({
-    email: z.string().email({ message: "Invalid email address" }),
-    first_name: z.string().min(1, { message: "First name is required" }),
-    last_name: z.string().min(1, { message: "Last name is required" }),
-    phone: z.string().regex(/a/, { message: "Invalid phone number" }),
+    email: z.string().email({ message: "invalid email address" }),
+    first_name: z.string().min(1, { message: "first name is required" }),
+    last_name: z.string().min(1, { message: "last name is required" }),
+    phone: z.string().regex(/^(\(\d{3}\) \d{3} - \d{4}|)$/, { message: "invalid phone number" }),
     preferred_contact: z.enum(['prefers_email', 'prefers_text', 'prefers_call']),
     confirmation_email: z.boolean(),
     confirmation_text: z.boolean(),
@@ -15,6 +16,10 @@ const schema = z.object({
 })
 
 export async function createUser(prevState: any, formData: FormData) {
+    const uuid = uuidv4();
+
+    console.log(`creating user with id ${uuid}`);
+    
     // Extract form data
     const formInfo = {
         email: formData.get('email') as string,
@@ -28,21 +33,30 @@ export async function createUser(prevState: any, formData: FormData) {
     }
 
     // Validate the form data
-    const validatedFields = schema.safeParse(formInfo)
+    const validatedFields = schema.safeParse(formInfo);
 
     // Return early if the form data is invalid
     if (!validatedFields.success) {
-        return {
-            ...prevState,
-            message: validatedFields.error.errors.map(err => err.message).join(', ')
+        const errorsList = `${validatedFields.error.errors.map(err => err.message).join(', ')}`
+
+        if (validatedFields.error.issues.filter(issue => issue.path[0] === 'email').length > 0) {
+            return {
+                ...prevState,
+                message: {
+                    body: `You must provide a valid email to submit the form`,
+                    uuid: null,
+                },
+                success: false,
+            }
         }
     }
 
-    // Handle the form submission logic (e.g., save to a database)
-    // For demonstration purposes, we'll just return a success message
-    // In real use, you might perform database operations or other side effects here
     return {
         ...prevState,
-        message: "User created successfully"
+        message: {
+            body: `Successfully submitted form`,
+            uuid: uuid,
+        },
+        success: true,
     }
 }

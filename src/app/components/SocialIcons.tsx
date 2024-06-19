@@ -18,8 +18,8 @@ const SocialIcons = () => {
     };
   
     return (   
-        <div className="absolute z-20 top-10 flex flex-col gap-5">
-            <div className="flex gap-5">
+        <div className={`relative z-20 flex flex-col gap-5 ${menuVisible ? "mb-10" : "mb-0"}`}>
+            <div className="flex gap-5 max-sm:gap-3">
                 <div 
                     className="
                         p-3 cursor-pointer rounded-lg 
