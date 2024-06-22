@@ -15,15 +15,15 @@ const BkgdGradient = () => {
             >
             </div>
                 <div
-                className="
-                    opacity-100
-                    dark:opacity-0
-                    absolute w-full h-full
-                    bg-gradient-to-r 
-                    from-slate-200 to-slate-300
-                    transition-opacity ease-in-out duration-300
-                "
-            >
+                    className="
+                        opacity-100
+                        dark:opacity-0
+                        absolute w-full h-full
+                        bg-gradient-to-r 
+                        from-slate-200 to-slate-300
+                        transition-opacity ease-in-out duration-300
+                    "
+                >
             </div>
         </div>
     );
