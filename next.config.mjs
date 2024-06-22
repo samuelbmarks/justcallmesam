@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "standalone",
+    output: "export",
   
     /**
      * Set base path. This is the slug of your GitHub repository.

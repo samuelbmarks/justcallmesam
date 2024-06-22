@@ -2,7 +2,7 @@ import React from 'react'
 
 const BkgdGradient = () => {
     return (
-        <div className="absolute w-[100%] h-[200%] self-center">
+        <div className="absolute w-[100%] h-[100%] self-center">
             <div
                 className="
                     opacity-0
