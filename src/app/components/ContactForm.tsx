@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 
 const ContactForm = () => {
     const initialState = {
-        message: ""
+        message: "",
+        success: null,
     }
     
     const [state, formAction] = useFormState(createUser, initialState)
@@ -54,8 +55,8 @@ const ContactForm = () => {
     };
 
     return (
-      <form className="z-20 flex flex-col gap-7 w-[400px] max-w-[80%]" action={formAction}>
-        <div className="relative z-0 w-full group">
+      <form className="relative z-20 flex flex-col items-center gap-7 w-[400px] max-w-[80%]" action={formAction}>
+        <div className="relative w-full group">
           <input 
             type="text"
             name="first_name"
@@ -82,13 +83,13 @@ const ContactForm = () => {
               origin-[0] peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
               peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
-              transition-all duration-300 transform -translate-y-6
+              transform -translate-y-6
             "
           >First Name *
           </label>
         </div>
 
-        <div className="relative z-0 w-full group">
+        <div className="relative w-full group">
           <input 
             type="text"
             name="last_name"
@@ -115,13 +116,13 @@ const ContactForm = () => {
               origin-[0] peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
               peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
-              transition-all duration-300 transform -translate-y-6
+              transform -translate-y-6
             "
           >Last Name *
           </label>
         </div>
 
-        <div className="relative z-0 w-full group">
+        <div className="relative w-full group">
           <input 
             type="email"
             id="email"
@@ -148,13 +149,13 @@ const ContactForm = () => {
               origin-[0] peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
               peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
-              transition-all duration-300 transform -translate-y-6
+              transform -translate-y-6
             "
           >Email Address *
           </label>
         </div>
 
-        <div className="relative z-0 w-full group">
+        <div className="relative w-full group">
           <input 
             type="tel"
             name="phone"
@@ -182,17 +183,17 @@ const ContactForm = () => {
               origin-[0] peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
               peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
-              transition-all duration-300 transform -translate-y-6
+              transform -translate-y-6
             "
           >Phone Number
           </label>
         </div>
 
-        <div className="flex gap-10 max-xs:flex-col">
-          <fieldset>
+        <div className="relative w-full group flex gap-10 max-xs:flex-col">
+          <fieldset className="flex flex-col gap-4">
             <legend className="text-sm text-medium text-slate-600 dark:text-slate-200 mb-4">Preferred Contact *</legend>
 
-            <div className="flex items-center mb-4 group">
+            <div className="flex items-center group">
               <input 
                 type="radio"
                 id="prefers_email"
@@ -201,7 +202,6 @@ const ContactForm = () => {
                 className="
                   form-radio w-4 h-4 
                   checked:bg-blue-500 dark:checked:bg-blue-400
-                  transition-all duration-300 ease-in-out
                 "
                 checked={preferredContact === "prefers_email"}
                 onChange={handlePreferredContactChange}
@@ -209,15 +209,14 @@ const ContactForm = () => {
               <label 
                 htmlFor="prefers_email"
                 className="
-                  ms-2 text-sm 
+                  ms-2 text-xs 
                   text-slate-600 dark:text-slate-200 
-                  transition-all duration-300 ease-in-out
                 "
               >Email
               </label>
             </div>
 
-            <div className="flex items-center mb-4 group">
+            <div className="flex items-center group">
               <input 
                 type="radio"
                 id="prefers_text"
@@ -227,7 +226,6 @@ const ContactForm = () => {
                   form-radio w-4 h-4 peer
                   checked:bg-blue-500 dark:checked:bg-blue-400
                   disabled:opacity-50
-                  transition-all duration-300 ease-in-out
                 "
                 checked={preferredContact === "prefers_text"}
                 onChange={handlePreferredContactChange}
@@ -237,14 +235,14 @@ const ContactForm = () => {
                 htmlFor="prefers_text"
                 className="
                   peer-disabled:opacity-50 
-                  ms-2 text-sm 
+                  ms-2 text-xs 
                   text-slate-600 dark:text-slate-200 
-                  transition-all duration-300 ease-in-out"
+                "
               >Phone (Text)
               </label>
             </div>
 
-            <div className="flex items-center mb-4 group">
+            <div className="flex items-center group">
               <input 
                 type="radio"
                 id="prefers_call"
@@ -254,7 +252,6 @@ const ContactForm = () => {
                   w-4 h-4 peer
                   checked:bg-blue-500 dark:checked:bg-blue-400
                   disabled:opacity-50 
-                  transition-all duration-300 ease-in-out
                 "
                 checked={preferredContact === "prefers_call"}
                 onChange={handlePreferredContactChange}
@@ -264,27 +261,26 @@ const ContactForm = () => {
                 htmlFor="prefers_call"
                 className="
                   peer-disabled:opacity-50 
-                  ms-2 text-sm 
+                  ms-2 text-xs 
                   text-slate-600 dark:text-slate-200 
-                  transition-all duration-300 ease-in-out
               "
               >Phone (Call)
               </label>
             </div>
           </fieldset>
 
-          <fieldset>
-            <legend className="mb-4 text-sm text-slate-600 dark:text-slate-200 transition-all duration-300 ease-in-out">Receive Confirmation?</legend>
+          <fieldset className="flex flex-col gap-4">
+            <legend className="text-sm text-slate-600 dark:text-slate-200 mb-4">Confirmation Message</legend>
 
-            <div className="flex items-center mb-4 group">
+            <div className="flex items-center group">
               <input 
                 id="confirmation_email"
                 type="checkbox"
-                value="confirmation_email"
+                name="confirmation_email"
+                value="true"
                 className="
                   form-checkbox w-4 h-4 rounded-sm peer 
                   checked:bg-blue-500 dark:checked:bg-blue-400
-                  transition-all duration-300 ease-in-out
                 "
                 checked={confirmationEmail}
                 onChange={handleConfirmationEmailChange}
@@ -292,25 +288,24 @@ const ContactForm = () => {
               <label 
                 htmlFor="confirmation_email"
                 className="
-                  ms-2 text-sm 
+                  ms-2 text-xs 
                   text-slate-600 dark:text-slate-200 
-                  transition-all duration-300 ease-in-out
                 "
-              >Confirmation Email
+              >Email
               </label>
             </div>
 
-            <div className="flex items-center mb-4 group">
+            <div className="flex items-center group">
                 <input 
                   id="confirmation_text"
                   type="checkbox"
-                  value="confirmation_text"
+                  name="confirmation_text"
+                  value="true"
                   className="
                     form-checkbox w-4 h-4 rounded-sm peer 
                     disabled:opacity-50 
                     checked:bg-blue-500 dark:checked:bg-blue-400
-                    transition-all duration-300 ease-in-out
-                    "
+                      "
                   checked={confirmationText}
                   onChange={handleConfirmationTextChange}
                   disabled={confirmationTextDisabled}
@@ -318,19 +313,17 @@ const ContactForm = () => {
                 <label 
                   htmlFor="confirmation_text"
                   className="
-                    ms-2 text-sm 
+                    ms-2 text-xs 
                     peer-disabled:opacity-50
                     text-slate-600 dark:text-slate-200 
-                    transition-all duration-300 ease-in-out
-                  "
-                >Confirmation Text
+                    "
+                >Text
                 </label>
             </div>
           </fieldset>
         </div>
 
-
-        <div className="relative z-0 w-full group">
+        <div className="relative w-full group">
           <textarea 
             name="message"
             id="message"
@@ -355,7 +348,7 @@ const ContactForm = () => {
               origin-[0] peer-focus:start-0 
               rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-700 peer-focus:dark:text-slate-100 
               peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
-              transition-all duration-300 transform -translate-y-6
+              transform -translate-y-6
             "
           >Message
           </label>
@@ -367,19 +360,22 @@ const ContactForm = () => {
             font-medium rounded-lg text-sm sm:w-auto px-5 py-2.5 text-center
             text-slate-100 dark:text-slate-700
             bg-slate-700 hover:bg-slate-800 dark:bg-slate-300 dark:hover:bg-slate-100
-            transition-all duration-300 ease-in-out
             focus:ring-3 focus:outline-none focus:ring-[green]
           "
         >Submit
         </button>
 
         <p aria-live="polite" className={`
-          text-center transition-all duration-300 ease-in-out
-          flex flex-col gap-2
-          ${state?.success ? 'text-blue-600 dark:text-blue-300' : 'text-red-500 dark:text-red-300'}
+          absolute bg-red-300 p-5 rounded-2xl text-center
+          flex flex-col gap-2 text-sm items-center
+          ${state?.success == null ? 'hidden' : ''}
         `}>
-          <span className="text-slate-100">{state?.message.body}</span>
-          <span className="text-sm">{state?.message.uuid}</span>
+          <span className="">{state?.message.body}</span>
+          <span className="">{state?.message.uuid}</span>
+          <div className="flex gap-3">
+            <a>Track Form Status</a>
+            <a>Home</a>
+          </div>
         </p>
 
       </form>

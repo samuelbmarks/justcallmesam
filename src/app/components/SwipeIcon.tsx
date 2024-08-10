@@ -18,7 +18,7 @@ const SwipeIcon = () => {
   
     return (
         <div
-        className={`flex fixed z-20 bottom-10 transition-opacity duration-500 ${
+        className={`flex fixed z-20 bottom-10 ${
           isFading ? 'opacity-0' : 'opacity-100'
         }`}
         >

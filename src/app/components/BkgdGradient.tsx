@@ -10,7 +10,7 @@ const BkgdGradient = () => {
                     absolute w-full h-full
                     bg-gradient-to-r 
                     from-slate-900 to-slate-800
-                    transition-opacity ease-in-out duration-300
+                    transition-all duration-300 ease-in-out
                 "
             >
             </div>
@@ -21,7 +21,7 @@ const BkgdGradient = () => {
                         absolute w-full h-full
                         bg-gradient-to-r 
                         from-slate-200 to-slate-300
-                        transition-opacity ease-in-out duration-300
+                        transition-all duration-300 ease-in-out
                     "
                 >
             </div>

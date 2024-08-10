@@ -5,7 +5,10 @@ import BkgdGradient from "./components/BkgdGradient";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center h-dvh overflow-visible">
+    <main className="
+      flex flex-col justify-center items-center
+      h-dvh overflow-visible
+    ">
       <BkgdGradient />
       
       <div className="absolute top-10">
