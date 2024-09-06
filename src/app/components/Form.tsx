@@ -31,6 +31,7 @@ export function Form({
             rounded-md sm:text-sm shadow-md
             border border-slate-200 dark:border-slate-900 placeholder-gray-400
             focus:border-black focus:outline-none focus:ring-black
+            transition-all duration-300 ease-in-out
           "
         />
       </div>
@@ -54,6 +55,7 @@ export function Form({
             rounded-md sm:text-sm shadow-md
             border border-slate-200 dark:border-slate-900 placeholder-gray-400
             focus:border-black focus:outline-none focus:ring-black
+            transition-all duration-300 ease-in-out
           "
         />
       </div>
@@ -77,6 +79,7 @@ export function Form({
             rounded-md sm:text-sm shadow-md
             border border-slate-200 dark:border-slate-900 placeholder-gray-400
             focus:border-black focus:outline-none focus:ring-black
+            transition-all duration-300 ease-in-out
           "
         />
       </div>
@@ -91,7 +94,7 @@ export function Form({
         <textarea
           id="message"
           name="message"
-          placeholder="How can I help?"
+          placeholder="How may I help?"
           autoComplete="message"
           required
           className="
@@ -99,6 +102,7 @@ export function Form({
             rounded-md sm:text-sm shadow-md
             border border-slate-200 dark:border-slate-900 placeholder-gray-400
             focus:border-black focus:outline-none focus:ring-black
+            transition-all duration-300 ease-in-out
           "
         />
       </div>
@@ -128,6 +132,7 @@ export function Form({
             rounded-md sm:text-sm shadow-md
             border border-slate-200 dark:border-slate-900 placeholder-gray-400
             focus:border-black focus:outline-none focus:ring-black
+            transition-all duration-300 ease-in-out
           "
         />
       </div>

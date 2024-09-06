@@ -3,13 +3,8 @@ interface SocialIconProps {
 }
 
 const SocialIcon: React.FC<SocialIconProps> = ({ iconSvg }) => {
-      
     return (   
-        <div className="relative flex flex-col group"
-            style={{
-                
-            }}    
-        >
+        <div className="relative flex flex-col group">
             <div 
                 className="
                     z-40 w-[48px] h-[48px] flex items-center justify-center

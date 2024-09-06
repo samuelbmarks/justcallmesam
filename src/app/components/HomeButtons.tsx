@@ -4,8 +4,11 @@ import TextButton from './TextButton';
 
 const HomeButtons = () => {    
     return (
-        <div className="relative flex gap-5 items-center text-xs max-sm:flex-col">
-            <Link 
+        <div className="
+            absolute z-20 bottom-10 right-[50px] 
+            flex gap-5 items-center text-xs max-sm:flex-col"
+        >
+            {/* <Link 
                 className="relative flex"
                 href="/contact">
                 <TextButton
@@ -17,7 +20,7 @@ const HomeButtons = () => {
                         </div>
                     }
                 />
-            </Link>
+            </Link> */}
             <a 
                 className="relative flex"
                 href="https://github.com/samuelbmarks/justcallmesam"
@@ -29,8 +32,8 @@ const HomeButtons = () => {
                     textDiv={
                         <div className="
                             tracking-[0.1rem] text-slate-100 dark:text-slate-700
-                            text-sm font-semibold sm:w-auto text-center text-nowrap
-                        ">VIEW SOURCE CODE
+                            text-sm font-medium sm:w-auto text-center text-nowrap
+                        ">view source code
                         </div>
                     }
                 />

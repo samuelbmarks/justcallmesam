@@ -1,13 +1,10 @@
 import { Form } from '../components/Form';
 import { SubmitButton } from '../components/SubmitButton';
-import SocialIcons from '../components/SocialIcons';
 
 export default function Contact() {
   return (
-    <main className="relative flex flex-col gap-10 py-10 justify-center items-center w-full h-auto">
-      <SocialIcons />
-
-      <div className="z-10 w-full max-w-md overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-900 shadow-xl">
+    <main className={`flex flex-col justify-center items-center w-full h-dvh overflow-visible`}>
+      {/* <div className="z-10 w-full max-w-md overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-900 shadow-xl">
         <div className="
           flex flex-col items-center justify-center gap-2 
           px-4 py-6 pt-8 text-center sm:px-16
@@ -29,7 +26,7 @@ export default function Contact() {
         >
           <SubmitButton>Submit</SubmitButton>
         </Form>
-      </div>
+      </div> */}
     </main>
   );
 }

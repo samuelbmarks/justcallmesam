@@ -55,7 +55,7 @@ const ContactForm = () => {
     };
 
     return (
-      <form className="relative z-20 flex flex-col items-center gap-7 w-[400px] max-w-[80%]" action={formAction}>
+      <form className="relative z-20 flex flex-col items-center gap-7 w-[120px] max-w-[80%]" action={formAction}>
         <div className="relative w-full group">
           <input 
             type="text"

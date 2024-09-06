@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import BkgdGradient from "./components/BkgdGradient";
 import { Providers } from "./providers";
+import HomeButtons from "./components/HomeButtons";
+import NavPane from "./components/NavPane";
+import HomeBar from "./components/HomeBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +24,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <BkgdGradient />
+          <HomeBar />
+          <NavPane />
+          <HomeButtons />
           {children}
         </Providers>
       </body>
